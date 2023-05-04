@@ -9,6 +9,19 @@ body{
 
 main{
     background-color: #031A2A;
+    background-image: url("Images/PageBG.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: -1050px;
+}
+
+.largeSpace{
+    width: 100%;
+    margin-top: 250px;
+}
+.largeSpacePad{
+    width: 100%;
+    padding-top: 250px;
 }
 
 .link{
@@ -54,6 +67,7 @@ main{
 }
 
 .blue{
+    font-weight: bold;
     background-color: #00F4FF;
     color: black;
     border-color: #00F4FF;
@@ -89,6 +103,15 @@ nav{
 }
 
 .titleText{
+    background: linear-gradient(90.87deg, #00F4FF 0%, #00FF29 100%);
+    font-weight: bold;
+    font-size:70px;
+    background-clip: text;
+    -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+}
+
+.titleText2{
     background: linear-gradient(90.87deg, #00F4FF 0%, #00FF29 100%);
     font-weight: bold;
     font-size:70px;
@@ -156,6 +179,10 @@ nav{
 .elememtSpace{
     margin-top: 100px;
 }
+.elememtSpacePad{
+    padding-top: 100px;
+}
+
 
 .partners-img {
     margin: 0;
@@ -216,7 +243,7 @@ nav{
     margin-left: 10%;
 }
     
-.div1 { grid-area: 1 / 1 / 2 / 2;     margin-left: 10%;}
+.div1 { grid-area: 1 / 1 / 2 / 2;  margin-left: 10%;}
 .div2 { grid-area: 1 / 2 / 2 / 3;  margin-left: 5%;margin-right: 5%;}
 .div3 { grid-area: 1 / 3 / 2 / 4; }
 
@@ -255,9 +282,11 @@ nav{
     padding-right: 3%;
     text-align: left;
     width: 100%;
+    line-height: 125%;
 }
 
 .greyText{
+    font-size: 20px;
     font-weight: normal;
     color:#BDBDBD;
 }
@@ -267,4 +296,382 @@ nav{
     margin-bottom: 2%;
     border-bottom:2px #10344E solid;
     width: 95%;
+}
+
+.cardSpecs{
+    text-align: center;
+    width: 80%;
+    margin-left: 10%;
+}
+.cardTable{
+    border-collapse: collapse;
+    margin: auto auto;
+}
+
+.cardTable .tableBorder{
+    border-top: double 4px transparent;
+    border-bottom: double 4px transparent;
+    background-image: linear-gradient(#031A2A, #031A2A), radial-gradient(circle at top left, #00F4FF 0%, #00FF29 100%);
+    background-origin: border-box;
+    background-clip: padding-box, border-box;
+}
+
+.cardTable th, .cardTable td{
+    text-align: center;
+    padding: 30px 20px;
+}
+
+.firstTbl{
+    padding-left: 0px !important;
+}
+
+.lastTbl{
+    padding-right: 0px !important;
+}
+
+.parent2 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 30px;
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.div4 { grid-area: 1 / 1 / 2 / 2; }
+.div5 { grid-area: 1 / 2 / 2 / 3; }
+.div6 { grid-area: 1 / 3 / 2 / 4; }
+.div7 { grid-area: 2 / 1 / 3 / 2; }
+.div8 { grid-area: 2 / 2 / 3 / 3; }
+.div9 { grid-area: 2 / 3 / 3 / 4; }
+
+.AOPCard{
+    line-height: 150%;
+    width: 90%;
+    height: 600px;
+    overflow: hidden;
+    background: #0A2434;
+    border-radius: 25px;
+}
+
+.cardText{
+    padding: 15px;
+}
+
+.parent3 {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-column-gap: 30px;
+    grid-row-gap: 0px;
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.div10 { grid-area: 1 / 1 / 2 / 5; }
+.div11 { grid-area: 2 / 1 / 3 / 5; }
+.div12 { grid-area: 1 / 5 / 3 / 7; }
+.div13 { grid-area: 1 / 7 / 3 / 9; }
+.div14 { grid-area: 3 / 1 / 5 / 3; }
+.div15 { grid-area: 3 / 3 / 5 / 5; }
+.div16 { grid-area: 3 / 5 / 5 / 7; }
+.div17 { grid-area: 3 / 7 / 5 / 9; }
+
+.advCard{
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.05);
+    width: 100%;
+    height: 90%;
+    overflow: hidden;
+    background: #0A2434;
+    border-radius: 25px;
+    text-align: center;
+}
+
+.iconCircle{
+    border-radius: 50% 50%;
+    background: rgba(10, 36, 52, 1);
+    box-shadow: 7px 7px 10px 7px rgba(0, 0, 0, 0.25);
+    width: 70px;
+    height: 70px;
+    margin: auto auto;
+    margin-top: 50px;
+    text-align: center;
+}
+
+.cardIcon{
+    padding-top: 7px;
+    width: 80%;
+}
+
+.advText .pText{
+    padding: 0%;
+    margin-left: 10%;
+    margin-right: 10%;
+    width: 80%;
+    line-height: 150%;
+    font-size: 22px;
+}
+
+.advText{
+    padding-top: 40px;
+}
+
+.cloud{
+    width: 80%;
+    padding-left: 10%;
+    padding-right: 10%;
+    background-image: url("Images/gcBG.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.cloudText{
+    width: 60%;
+}
+.cloudText .pText{
+    width: 105%;
+}
+
+.left{
+    float: left;
+}
+
+.circle{
+    background: rgba(3, 26, 42, 1);
+    border-radius: 50%;
+    width: 700px;
+    height: 700px;
+    margin-right: 50px;
+}
+
+.meet{
+    background: rgba(8, 32, 49, 1);
+    width: 80%;
+    padding-left: 10%;
+    padding-right: 10%;
+    height: 900px;
+    border-bottom-left-radius: 200px;
+    border-bottom-right-radius: 200px;
+}
+
+.circleCont{
+    width: min-content;
+    height: 800px;
+}
+
+.litepaper{
+    width: 90%;
+    padding-left: 10%;
+}
+
+.liteText{
+    float: left;
+    width: 50%;
+}
+
+.litePaper{
+    float: right;
+    width: 50%;
+    height: 100%;
+    background-image: url("Images/RectanglePage.svg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: bottom;
+}
+
+.litePaper img{
+    width: 50%;
+    padding-left: 200px;
+    margin-bottom: 30px;
+}
+
+.FAQS .dropdown{
+    margin-top:5%;
+    text-align:left;
+  }
+  
+  .dropdown {
+    display: block;
+    position: relative;
+    border-bottom:white solid 2px;
+  }
+  
+  .dropdown button{
+    background-color:transparent;
+    border:hidden;
+    color:white;
+    font-weight:bold;
+    font-size:35px;
+    width:90%;
+    line-height: 150%;
+  }
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    width: 100%;
+    overflow: auto;
+    font-size:20px;
+  }
+  
+  .currency{
+    color:#303B52!important;
+    font-size:2rem!important;
+  }
+  
+  .dropdown-content-dropped {
+    display: block;
+    border-bottom: double 4px transparent;
+    background-image: linear-gradient(#031A2A, #031A2A), radial-gradient(circle at top left, #00F4FF 0%, #00FF29 100%);
+    background-origin: border-box;
+    background-clip: padding-box, border-box;
+}
+  
+  .dropdown-dropped{
+    border-bottom:white solid 0px;
+    margin-bottom:10%;
+  }
+  
+  .dropdown-raised{
+    display: block;
+    position: relative;
+    border-bottom:white solid 2px;
+  }
+  
+  .dropdown-content-raised {
+    display: none;
+    position: absolute;
+    width: 100%;
+    overflow: auto;
+  }
+  
+  .dropdown-content a {
+    display: block;
+    color: #BDBDBD!important;
+    padding: 5px;
+    text-decoration: none;
+    background-color:transparent;
+  }
+  .dropdown-content a:hover {
+    background-color: transparent;
+  }
+  
+  .FAQS .rows{
+    width:70%;
+    margin-left:15%;
+  }
+
+  .FAQS{
+    background-color: #031A2A;
+  }
+  
+  .FAQS .arrow{
+    width:5%;
+    float:right !important;
+  }
+  
+  .FAQS .rows .dropdown{
+    padding-bottom:2%;
+  }
+  
+  .dropdown button{
+    text-align:left;
+  }
+  
+  #arrowright:hover{
+    cursor: pointer;
+  }
+  #arrowleft:hover{
+    cursor: pointer;
+  }
+
+  .rows{
+    margin-left:15%!important;
+    width:80%;
+  }
+
+  .rows::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+  .column1{
+    float: left;
+    width: 100%;
+    padding: 10px;
+  }
+  
+  .FAQS{
+    width: 100%;
+    text-align: center;
+  }
+
+
+footer{
+    background: rgba(10, 36, 52, 1);
+    width: 100%;
+    padding-bottom: 100px;
+}
+.footerTop{
+    width: calc(100%-400px);
+    padding-top: 100px;
+    padding-left: 200px;
+    padding-right: 200px;
+
+}
+
+.footer-seperator{
+    margin-top: 12%;
+    margin-left: 200px;
+    margin-right: 200px;
+    margin-bottom: 2%;
+    border-bottom:2px #BDBDBD solid;
+    width: calc(100%-400px);
+}
+
+footer .left img{
+    width: 35%;
+}
+
+footer .left{
+    width: 30%;
+}
+
+.right{
+    width: 50%;
+    float: right;
+}
+
+footer .trans, footer .btn{
+    padding: 25px 0px;
+    float: right;
+    text-align: center;
+    display: block;
+    width: 50%;
+    border-radius: 15px;
+    border-color: rgba(10, 36, 52, 1);
+    box-shadow: 5px 5px 10px 5px rgba(0, 0, 0, 0.25);
+}
+
+.leftright{
+    width: calc(100%-400px);
+    padding-left: 200px;
+    padding-right: 200px;
+}
+.leftright .greyText{
+    float: left;
+}
+
+.leftright .imgs{
+    text-align: right;
+}
+
+.imgs a img{
+    width: 25px;
+}
+.imgs a{
+    text-decoration: none;
 }
