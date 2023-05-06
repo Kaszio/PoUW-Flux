@@ -33,6 +33,7 @@ main{
     text-decoration: none;
 }
 .menu{
+    text-align: center;
     list-style: none;
     width: 100%;
 }
@@ -51,6 +52,7 @@ main{
 }
 
 .btn{
+
     font-weight: bold;
     border: solid 2px;
     border-radius: 25px;
@@ -59,7 +61,7 @@ main{
     text-decoration: none;
     text-align: center;
     margin-top: 20px;
-    width: 95%;
+    width: 100%;
 }
 
 .navCont .navElements .btn{
@@ -167,7 +169,6 @@ main{
 .menu li a{
     display: block;
     padding: 30px;
-    padding-left: 60px;
     color: white;
 }
 .menu a:hover{
